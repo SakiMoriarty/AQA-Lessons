@@ -2,35 +2,38 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        //printThreeWords();
-        //checkSumSign();
-        //printColor();
-        //compareNumbers();
-        //System.out.println(intNumber());
-        //positiveNegativeNumber();
-        //System.out.println(positiveNumb());
-        //printStringMultipleTimes("Привет, мир! ", 5);
-        //System.out.println(isLeapYear());
-        //zeroOneMassiv();
-        //massiveHundred();
-        //underSixMassive();
-        //DiagonalArray();
 
-        //Zadanie 14
+        // Вызов всех методов
+        printThreeWords();
+        checkSumSign();
+        printColor();
+        compareNumbers();
+        System.out.println(intNumber());
+        positiveNegativeNumber();
+        System.out.println(positiveNumb());
+        printStringMultipleTimes("Привет, мир! ", 5);
+        System.out.println(isLeapYear());
+        zeroOneMassiv();
+        massiveHundred();
+        underSixMassive();
+        DiagonalArray();
+
+        // Задание 14: инициализация массива с определённой длиной и значением
         int len = 8;
         int initialValue = 7;
         int[] result = initializeArray(len, initialValue);
 
-        // Вывод массива
         for (int value : result) {
             System.out.print(value + " ");
         }
     }
 
+    // Задание 1: Печатает три слова в столбец
     public static void printThreeWords(){
         System.out.println("Orange\nBanana\nApple");
     }
 
+    // Задание 2: Проверяет сумму двух переменных и печатает, положительная она или отрицательная
     public  static void checkSumSign(){
         int a = 8;
         int b = 32;
@@ -43,6 +46,7 @@ public class Main {
         }
     }
 
+    // Задание 3: Выводит цвет в зависимости от значения переменной
     public static void printColor(){
         int value = 100;
         if(value <= 0){
@@ -56,6 +60,7 @@ public class Main {
         }
     }
 
+    // Задание 4: Сравнивает два числа и печатает результат сравнения
     public static void compareNumbers(){
         int a = 81;
         int b = 3;
@@ -67,6 +72,7 @@ public class Main {
         }
     }
 
+    // Задание 5: Проверяет, находятся ли сумма двух чисел в диапазоне от 10 до 20
     public static boolean intNumber(){
         Scanner Firstscanner = new Scanner(System.in);
         System.out.println("Введите первое целое число: ");
@@ -85,6 +91,7 @@ public class Main {
         }
     }
 
+    // Задание 6: Определяет, положительное или отрицательное число
     public static void positiveNegativeNumber(){
         Scanner Firstscanner = new Scanner(System.in);
         System.out.println("Введите целое число: ");
@@ -97,6 +104,7 @@ public class Main {
         }
     }
 
+    // Задание 7: Возвращает true, если число отрицательное, false если положительное
     public static boolean positiveNumb(){
         Scanner scanner = new Scanner(System.in);
         System.out.println("Введите число: ");
@@ -109,12 +117,14 @@ public class Main {
         }
     }
 
+    // Задание 8: Печатает строку указанное количество раз
     public static void printStringMultipleTimes(String str, int times){
         for(int i = 0; i < times; i++){
             System.out.printf(str);
         }
     }
 
+    // Задание 9: Определяет, является ли год високосным
     public static boolean isLeapYear(){
         Scanner scanner = new Scanner(System.in);
         System.out.println("Введите год: ");
@@ -131,6 +141,7 @@ public class Main {
         }
     }
 
+    // Задание 10: Заменяет все 0 на 1 и все 1 на 0 в массиве
     public static void zeroOneMassiv(){
         int[] arr = {1, 1, 0, 0, 1, 0, 1, 1, 0, 0};
         for(int i = 0; i < arr.length; i++){
@@ -143,6 +154,7 @@ public class Main {
         }
     }
 
+    // Задание 11: Заполняет массив от 1 до 100 и печатает его
     public static void massiveHundred(){
         int[] arr = new int[101];
         for(int i = 1; i < arr.length; i++){
@@ -151,6 +163,7 @@ public class Main {
         }
     }
 
+    // Задание 12: Умножает все числа в массиве меньше 6 на 2
     public static void underSixMassive(){
         int[] arr = {1, 5, 3, 2, 11, 4, 5, 2, 4, 8, 9, 1};
         for(int i = 0; i < arr.length; i++){
@@ -161,6 +174,7 @@ public class Main {
         }
     }
 
+    // Задание 13: Заполняет диагонали квадратного массива единицами
     public static void DiagonalArray(){
         int n = 5;
         int[][] array = new int[n][n];
@@ -177,6 +191,7 @@ public class Main {
         }
     }
 
+    // Задание 14: Возвращает массив определённой длины, заполненный одинаковыми значениями
     public static int[] initializeArray(int len, int initialValue){
         int[] array = new int[len];
         for (int i = 0; i < len; i++) {
